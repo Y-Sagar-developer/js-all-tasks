@@ -1,54 +1,28 @@
-//problrm:1
+// task:
+// ------
+// var aos = ["mom", "js", "malayalam", "html", "css", "dad"];
+
+// // op=["mom","dad","malayalam"]
+
+// using for/while and do-while loop
 
 // Answer:
 
-var score = 0;
-score >= 90
-  ? console.log("Excellent")
-  : score >= 60
-  ? console.log("good")
-  : console.log("needs Improvement");
 
-//   ----------------------------------------------------------------------------
+var aos = ["mom", "js", "malayalam", "html", "racecar", "css", "dad", "madam"];
+output = [];
 
-// problem:2
-
-// Answer:
-
-var day = "SunDay";
-
-day == "SaturDay" || day == "SunDay"
-  ? console.log("WeekEnd")
-  : day == "MonDay" ||
-    day == "TuesDay" ||
-    day == "WedNesDay" ||
-    day == "ThursDay"
-  ? console.log("WeekDAy")
-  : console.log("Enter Day Properly");
-//   ------------------------------------------------------------------
-
-// proble:3
-
-//Answer:
-
-var inputString = "madam";
-var output = "";
-for (i = inputString.length - 1; i >= 0; i--) {
-  output += inputString[i];
+for (i = 0; i < aos.length; i++) {
+  var x = aos[i];
+  var y = "";
+  for (j = x.length - 1; j >= 0; j--) {
+    y += x[j];
+  }
+  if (x === y) {
+    output.push(x);
+  }
 }
-inputString == output
-  ? console.log(`${inputString} is a Palindrome.`)
-  : console.log(`${inputString} is not a Palindrome`);
+console.log(output);
 
-//   --------------------------------------------------------------------------------
-
-//problem:4
-
-//Answeer:
-
-var str = "HELLO";
-var output = "";
-for (i = 0; i < str.length; i++) {
-  output += str[i];
-  console.log(output);
-}
+output
+[ 'mom', 'malayalam', 'racecar', 'dad', 'madam' ]
